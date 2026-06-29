@@ -1,0 +1,29 @@
+[{
+    "name": "Samriddhi College",
+    "image": "/images/partner-colleges/samriddhi-college.webp",
+    "location": "Lokanthali, Bhaktapur",
+    "university": "Tribhuvan University",
+    "established": "Established 2013",
+    "degree": "BSc CSIT・BCA・BSW・BBS",
+    "features": "Cisco Network Academy・AWS Academy・Red Hat Academy・Innovation Center",
+    "slug": "samriddhi-college"
+},{
+    "name": "New Summit College",
+    "image": "/images/partner-colleges/new-summit.webp",
+    "location": "Shantinagar Gate, New Baneshwor",
+    "university": "Tribhuvan University",
+    "established": "Established 1998",
+    "degree": "BSc CSIT・BCA・BBM・BBS・NEB+2",
+    "features": "TechTrix・Minds In Motion・Hackathon・Job Fair",
+    "slug": "new-summit-college"
+},{
+    "name": "National College of Computer Studies",
+    "image": "/images/partner-colleges/NCCS.webp",
+    "location": "Paknajol, Kathmandu",
+    "university": "Tribhuvan University",
+    "established": "Established 2001",
+    "degree": "BSc CSIT・BCA・BIM・BBM・BHM・NEB+2",
+    "features": "Hackathon・Start-Up・Research Journal・Quality Accreditation by UGC・Social Work",
+    "slug": "nccs"
+}  
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "6818deac7f1e285b400cd018",
+    "name": "(2025) Bachelor of Science in Computer Science and Information Technology",
+    "shortName": "BSc CSIT",
+    "examCondutedOn": "2025-11-08",
+    "university": "Tribhuvan University",
+    "badge": "Computer Science and Information Technology (CSIT)",
+    "imageLink": "iCN7oS8Yds8DcpvgqcCKdZIXW5Tqol1Bihyrk3eHM4jLsupg",
+    "resultPdfLink": "/pdf/1762702218.pdf",
+    "slug": "bsc-csit-2025"
+  },
+  {
+    "_id": "6818deac7f1e285b400cd018",
+    "name": "(2025) Bachelor of Computer Application",
+    "shortName": "BCA",
+    "examCondutedOn": "2025-11-08",
+    "university": "Tribhuvan University",
+    "badge": "Computer Application (BCA)",
+    "imageLink": "iCN7oS8Yds8DreMNVRgRaZ8nFhPtU0rsVHKzeLc1MA7kufgw",
+    "resultPdfLink": "/pdf/1762943155.pdf",
+    "slug": "bca-2025"
+  }
+]
