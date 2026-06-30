@@ -24,7 +24,7 @@ export default function CounsellingPopup() {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="overflow-hidden p-0 sm:max-w-[480px]">
+      <DialogContent className="overflow-hidden p-0 sm:max-w-[640px] lg:max-w-[820px]">
         <DialogTitle className="sr-only">
           Free Counselling for +2 Graduates
         </DialogTitle>
