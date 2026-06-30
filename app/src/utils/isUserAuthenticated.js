@@ -8,7 +8,8 @@ export default function IsUserAuthenticated() {
     queryKey: ["current-user"],
     queryFn: getCurrentUser,
     retry: false,
-    cacheTime: 0,
-    staleTime: 0,
+    refetchOnWindowFocus: false,
+    staleTime: 5 * 60 * 1000,
+    gcTime: 10 * 60 * 1000,
   });
 }

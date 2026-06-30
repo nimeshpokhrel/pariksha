@@ -24,8 +24,8 @@ export function AuthProvider({ children }) {
     queryFn: () => getCurrentUser(),
     refetchOnWindowFocus: false,
     retry: false,
-    cacheTime: 0,
-    staleTime: 0,
+    staleTime: 5 * 60 * 1000,
+    gcTime: 10 * 60 * 1000,
   });
 
   const { data: completedVideos } = useQuery({
@@ -90,7 +90,9 @@ export function AuthProvider({ children }) {
   }, [testHistory]);
 
   const login = () => {
-    queryClient.invalidateQueries(["current-user"]);
+    // v5 syntax — must pass a filters object. With a higher staleTime this is
+    // what forces an immediate re-fetch of the user right after login.
+    queryClient.invalidateQueries({ queryKey: ["current-user"] });
   };
 
   const removeFromUserCompletedVideos = (videoId) => {
@@ -131,6 +133,9 @@ export function AuthProvider({ children }) {
 
   const logout = () => {
     setUser(null);
+    // Drop the cached user so the now-longer staleTime can't keep serving a
+    // logged-in user after logout.
+    queryClient.removeQueries({ queryKey: ["current-user"] });
   };
 
   return (
