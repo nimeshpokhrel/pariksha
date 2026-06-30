@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { CounsellingForm } from "@/components/CounsellingForm";
 
 export default function CounsellingPage() {
@@ -16,26 +15,7 @@ export default function CounsellingPage() {
 
       <div className="min-h-screen bg-slate-50">
         <div className="container mx-auto max-w-5xl px-4 py-8 md:px-6">
-          <div className="overflow-hidden rounded-2xl shadow-sm">
-            <Image
-              src="/counselling/couns_desktop.jpg"
-              alt="Recent +2 graduate? Get free study and career counselling session"
-              width={2048}
-              height={1137}
-              priority
-              className="hidden h-auto w-full sm:block"
-            />
-            <Image
-              src="/counselling/couns_phone.jpg"
-              alt="Recent +2 graduate? Get free study and career counselling session"
-              width={1400}
-              height={2000}
-              priority
-              className="block h-auto w-full sm:hidden"
-            />
-          </div>
-
-          <div className="mx-auto mt-8 max-w-xl rounded-2xl border border-gray-200 bg-white p-6 shadow-sm md:p-8">
+          <div className="mx-auto max-w-xl rounded-2xl border border-gray-200 bg-white p-6 shadow-sm md:p-8">
             <h1 className="mb-1 text-2xl font-bold text-primary">
               Book Your Free Counselling Session
             </h1>
